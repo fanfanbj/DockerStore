@@ -1,1 +1,1 @@
-# Private Registry
+# Private Trusted Registry
