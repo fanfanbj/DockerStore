@@ -1,1 +1,1 @@
-# DockerStore
+# Private Registry
