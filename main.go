@@ -6,7 +6,7 @@ import (
 )
 
 func main () {
-	result,_, err := client.RegistryAPI("GET","/v2/_catalog","")
+	result,_, err := registry.RegistryAPI("GET","/v2/_catalog","admin","badmin","")
 	if err != nil {
 		fmt.Println(err)
 		return 

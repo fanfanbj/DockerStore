@@ -1,4 +1,4 @@
-package client
+package registry
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 var RegistryAddr string = "https://registry1:5000"
 
 //invoke docker registry API with Auth by flex_Auth_service.
-func RegistryAPI(method,path,username,password,acceptHeader string)([]byte,string,error) {
+func (registry *Registry) RegistryAPI(method,path,username,password,acceptHeader string)([]byte,string,error) {
 	url := fmt.Sprintf("%s%s",RegistryAddr,path)
 	request, err := http.NewRequest(method, url, nil)
 	if err != nil {
