@@ -37,4 +37,4 @@ As a result you should get a list of repositories in your registry. If you have 
 	
 
 # Refer to
-	https://github.com/kwk/docker-registry-setup
+* https://github.com/kwk/docker-registry-setup
